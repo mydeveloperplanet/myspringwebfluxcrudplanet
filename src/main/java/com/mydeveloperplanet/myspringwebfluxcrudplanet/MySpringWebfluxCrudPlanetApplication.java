@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MyspringwebfluxcrudplanetApplication {
+public class MySpringWebfluxCrudPlanetApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MyspringwebfluxcrudplanetApplication.class, args);
+		SpringApplication.run(MySpringWebfluxCrudPlanetApplication.class, args);
 	}
 }
