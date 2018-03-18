@@ -27,12 +27,12 @@ public class DataImportConfiguration {
     }
 
     private List<Show> getShows() {
-        Properties yaml = loadCitiesYaml();
+        Properties yaml = loadShowsYaml();
         MapConfigurationPropertySource source = new MapConfigurationPropertySource(yaml);
         return new Binder(source).bind("shows", Bindable.listOf(Show.class)).get();
     }
 
-    private Properties loadCitiesYaml() {
+    private Properties loadShowsYaml() {
         YamlPropertiesFactoryBean properties = new YamlPropertiesFactoryBean();
         properties.setResources(new ClassPathResource("shows.yml"));
         return properties.getObject();
