@@ -1,7 +1,3 @@
-/* Disable the module-info, running the tests causes errors due
-   that mongodb-driver and mongodb-driver-core jar files
-   contain same module names which is forbidden.
- */
 module com.mydeveloperplanet.myspringwebfluxcrudplanet {
     requires spring.boot.autoconfigure;
     requires spring.boot;
